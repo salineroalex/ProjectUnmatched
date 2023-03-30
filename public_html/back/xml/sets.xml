@@ -1,12 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
--->
 
-
-
-<root>
+<sets>
+    <set id="BL1" released="yes">
+        <name>Battle of Legends: Volumen One</name>
+        <numbCharacters>4</numbCharacters>
+        <price>34.15</price>
+        <date>09/2019</date>
+        <language>Sapnish</language>
+        <artist>Oliver Barrett</artist>
+    </set>
     
-</root>
+    <set id="RHB" released="yes">
+        <name>Robin Hood vs. Bigfoot</name>
+        <numbCharacters>2</numbCharacters>
+        <price>25.15</price>
+        <date>10/2019</date>
+        <language>Spanish</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="LEE" released="yes">
+        <name>Bruce Lee</name>
+        <numbcharacters>1</numbcharacters>
+        <price>14.36</price>
+        <date>10/2019</date>
+        <language>English</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="IGR" released="yes">
+        <name>Jurassic Park: InGen vs. Raptors</name>
+        <numbcharacters>2</numbcharacters>
+        <price>25.15</price>
+        <date>04/2020</date>
+        <language>English</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="CNF" released="yes">
+        <name>Cobble & Fog</name>
+        <numbCharacters>4</numbCharacters>
+        <price>34.15</price>
+        <date>07/2020</date>
+        <language>Spanish</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="LRB" released="yes">
+        <name>Little Red Riding hood vs. Beowulf</name>
+        <numbCharacters>2</numbCharacters>
+        <price>25.15</price>
+        <date>12/2020</date>
+        <language>English</language>
+        <artist>Marc Aspinall</artist>
+    </set>
+    
+    <set id="BL2" released="yes">
+        <name>Battle of Legends: Volume Two</name>
+        <numbCharacters>4</numbCharacters>
+        <price>34.15</price>
+        <date>01/2022</date>
+        <language>English</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+ 
+    <set id="HVG" released="yes">
+        <name>Houdini vs. Genie</name>
+        <numbCharacters>2</numbCharacters>
+        <price>25.15</price>
+        <date>12/2022</date>
+        <language>English</language>
+        <artist>Peter Diamond</artist>
+    </set>
+    
+
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+    
+    <set released="yes">
+        <name></name>
+        <numbcharacters></numbcharacters>
+        <price></price>
+        <date></date>
+        <language></language>
+        <artist></artist>
+    </set>
+</sets>
 
