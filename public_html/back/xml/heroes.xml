@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<root>
-    
-</root>
-
+<heroes>
+    <hero>
+        <name>Medusa</name>
+        <quantity>1</quantity>
+        <compantion>Harpy</compantion>
+        <quantity>3</quantity>
+        <set>Battle of Legends: Volume One</set>
+        <deck>Medusa's Deck</deck>
+    </hero>
+</heroes>
