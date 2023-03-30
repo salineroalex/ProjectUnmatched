@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<cards>
+    <card id="001">
+        <name>Surprise Attack</name>
+        <type>Attack</type>
+        <value>5</value>
+        <boost>1</boost>
+        <effect>Immediately: Cancel all effects on your opponent's card.
 
-<root>
+After combat: If Invisible Man is on a space with a fog token, move that fog token to another space.</effect>
+        <character></character>
+        <appear></appear>
+        <quantity>2</quantity>
+    </card>
     
-</root>
-
+    <card id="002">
+        <name>Slip Away</name>
+        <type>Attack</type>
+        <value>3</value>
+        <boost>2</boost>
+        <effect>After combat: Move 1 fog token to a space without a fighter, then place Invisible Man on that space.</effect>
+        <character></character>
+        <appear></appear>
+        <quantity>3</quantity>
+    </card>
+    
+    <card id="003">
+        <name>Emerge From Mist</name>
+        <type>attack</type>
+        <value>3</value>
+        <boost>2</boost>
+        <effect>During combat: If Invisible Man started this turn on a space with a fog token, this card's value is 5 instead.</effect>
+        <character></character>
+        <appear></appear>
+        <quantity>2</quantity>
+    </card>
+    
+    <card id="004">
+        <name>Snicker-Snack</name>
+        <type>Attack</type>
+        <value>3</value>
+        <boost>4</boost>
+        <effect>After combat: If you won the combat, look at your opponent's hand and choose 1 card for them to discard.</effect>
+        <character></character>
+        <appear></appear>
+        <quantity>1</quantity>
+    </card>
+    
+    <card id="005">
+        <name>O Frabjous Day</name>
+        <type>Attack</type>
+        <value>4</value>
+        <boost>4</boost>
+        <effect>After combat: Change size.</effect>
+        <character></character>
+        <appear></appear>
+        <quantity>1</quantity>
+    </card>
+    
+    <card id="006">
+        <name>The Other Side of the Mushroom</name>
+        <type>Attack</type>
+        <value>3</value>
+        <boost>4</boost>
+        <effect>After combat: Move Alice up to 3 spaces. Change size.</effect>
+        <character></character>
+        <appear></appear>
+        <quantity>1</quantity>
+    </card>
+   
+   <card id="007">
+        <name></name>
+        <type></type>
+        <value></value>
+        <boost></boost>
+        <effect></effect>
+        <character></character>
+        <appear></appear>
+        <quantity></quantity>
+    </card>
+</cards>
