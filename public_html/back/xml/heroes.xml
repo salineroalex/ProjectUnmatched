@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <heroes>
-    <hero>
+    <hero id = "01">
         <name>Medusa</name>
         <quantity>1</quantity>
         <companion>
             <name>Harpy</name>
             <quantity>3</quantity>
         </companion>
-        <set>Battle of Legends: Volume One</set>
+        <set></set>
         <deck>Medusa's Deck</deck>
     </hero>
-    <hero>
+    <hero id = "02">
         <name>Alice</name>
         <quantity>1</quantity>
         <companion>
             <name>The Porter</name>
             <quantity>1</quantity>
         </companion>
-        <set>Battle of Legends: Volume One</set>
+        <set></set>
         <deck>Sinbad's Deck</deck>
     </hero>
-    <hero>
+    <hero id = "03">
         <name>Alice</name>
         <quantity>1</quantity>
         <companion>
             <name>The Jabberwock</name>
             <quantity>1</quantity>
         </companion>
-        <set>Battle of Legends: Volume One</set>
+        <set></set>
         <deck>Alice's Deck</deck>
     </hero>
 </heroes>
