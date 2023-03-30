@@ -13,7 +13,7 @@
         </specialHability>
         <healthPoints>14</healthPoints>
         <move>2</move>
-        <assistant>
+        <assistant quantity = "1">
             <name>Tara</name>
             <attack>Ranged</attack>
             <healthPoints>6</healthPoints>
