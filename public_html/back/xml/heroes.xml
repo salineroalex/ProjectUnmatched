@@ -3,7 +3,7 @@
 <!-- Este es el ejemplo, yo (Ander Moreno) voy a hacer desde el 18 hasta el 45-->
 
 <heroes>
-    <hero id = "01" quantity = "1">
+    <hero id = "18" quantity = "1">
         <name>Willow</name>
         <attack>Ranged</attack>
         <specialHability>
