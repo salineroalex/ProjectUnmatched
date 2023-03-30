@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Este es el ejemplo, yo (Ander Moreno) voy a hacer desde el 18 hasta el 45-->
+
 <heroes>
-    <hero id = "01">
-        <name>Medusa</name>
-        <quantity>1</quantity>
-        <companion>
-            <name>Harpy</name>
-            <quantity>3</quantity>
-        </companion>
-        <set></set>
-        <deck>Medusa's Deck</deck>
-    </hero>
-    <hero id = "02">
-        <name>Alice</name>
-        <quantity>1</quantity>
-        <companion>
-            <name>The Porter</name>
-            <quantity>1</quantity>
-        </companion>
-        <set></set>
-        <deck>Sinbad's Deck</deck>
-    </hero>
-    <hero id = "03">
-        <name>Alice</name>
-        <quantity>1</quantity>
-        <companion>
-            <name>The Jabberwock</name>
-            <quantity>1</quantity>
-        </companion>
-        <set></set>
-        <deck>Alice's Deck</deck>
+    <hero id = "01" quantity = "1">
+        <name>Willow</name>
+        <attack>Ranged</attack>
+        <specialHability>
+            When Willow or Tara is dealt damage, Willow becomes Dark Willow.
+            
+            At the end of your turn, if Dark Willow is adjacent to Tara, she becomes Willow.
+        </specialHability>
+        <healthPoints>14</healthPoints>
+        <move>2</move>
+        <assistant>
+            <name>Tara</name>
+            <attack>Ranged</attack>
+            <healthPoints>6</healthPoints>
+        </assistant>
     </hero>
 </heroes>
