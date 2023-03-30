@@ -4,9 +4,15 @@
     <hero>
         <name>Medusa</name>
         <quantity>1</quantity>
-        <compantion>Harpy</compantion>
-        <quantity>3</quantity>
+        <companion quantity ="3">Harpy</companion>
         <set>Battle of Legends: Volume One</set>
         <deck>Medusa's Deck</deck>
+    </hero>
+    <hero>
+        <name>Alice</name>
+        <quantity>1</quantity>
+        <companion quantity ="1">The Porter</companion>
+        <set>Battle of Legends: Volume One</set>
+        <deck>Sinbad's Deck</deck>
     </hero>
 </heroes>
