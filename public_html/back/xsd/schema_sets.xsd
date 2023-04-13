@@ -8,26 +8,42 @@
     <!--Here is the data structure for the SETS node-->
     <xsd:element name="sets">
         <xsd:complexType>
-            
             <xsd:sequence>
                 <xsd:element name="set" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="name" type="xsd:string"/>
                             <xsd:element name="numbCharacters" type="xsd:positiveInteger"/>
-                            <xsd:element name="price" type="xsd:decimal"/>
+                            <xsd:element name="price">
+                                <!--We wanted to add the price in different currencies so we made the element price as a complexType -->
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="USD" type="xsd:decimal"/>
+                                        <xsd:element name="EUR" type="xsd:decimal"/>
+                                        <xsd:element name="GBP" type="xsd:decimal"/>
+                                        <xsd:element name="JPY" type="xsd:decimal"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
                             <xsd:element name="date" type="xsd:string"/>
-                            <xsd:element name="language" type="xsd:string"/>
+                            <xsd:element name="language" minOccurs="1" maxOccurs="5">
+                                <xsd:simpleType>
+                                    <xsd:restriction base = "xsd:string">
+                                        <xsd:enumeration value="English"/>
+                                        <xsd:enumeration value="Spanish"/>
+                                        <xsd:enumeration value="German"/>
+                                        <xsd:enumeration value="French"/>
+                                        <xsd:enumeration value="Japanese"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
                             <xsd:element name="artist" type="xsd:string"/>
                         </xsd:sequence>
                         <xsd:attribute name="id" type="xsd:string" use="required"/>
                         <xsd:attribute name="released" type="xsd:boolean" use="required"/>
-                    </xsd:complexType>
+                    </xsd:complexType>  
                 </xsd:element>
-            </xsd:sequence>
-            
+            </xsd:sequence>           
         </xsd:complexType>
-    </xsd:element>
-    
-    
+    </xsd:element> 
 </xsd:schema>
