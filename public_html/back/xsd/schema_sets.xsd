@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema version="1.0"
+            xmlns="../xml/sets.xml"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    
+    <!--Here is the data structure for the SETS node-->
+    <xsd:element name="sets">
+        <xsd:complexType>
+            
+            <xsd:sequence>
+                <xsd:element name="set" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="numbCharacters" type="xsd:positiveInteger"/>
+                            <xsd:element name="price" type="xsd:decimal"/>
+                            <xsd:element name="date" type="xsd:string"/>
+                            <xsd:element name="language" type="xsd:string"/>
+                            <xsd:element name="artist" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="id" type="xsd:string" use="required"/>
+                        <xsd:attribute name="released" type="xsd:boolean" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+            
+        </xsd:complexType>
+    </xsd:element>
+    
+    
+</xsd:schema>

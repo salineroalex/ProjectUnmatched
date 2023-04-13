@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<sets>
-    <set id="BL1" released="yes">
+<sets 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "../xsd/schema_sets.xsd">
+    
+    <set id="BL1" released="true">
         <name>Battle of Legends: Volumen One</name>
         <numbCharacters>4</numbCharacters>
         <price>34.15</price>
         <date>09/2019</date>
-        <language>Sapnish</language>
+        <language>Spanish</language>
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="RHB" released="yes">
+    <set id="RHB" released="true">
         <name>Robin Hood vs. Bigfoot</name>
         <numbCharacters>2</numbCharacters>
         <price>25.15</price>
@@ -19,26 +22,26 @@
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="LEE" released="yes">
+    <set id="LEE" released="true">
         <name>Bruce Lee</name>
-        <numbcharacters>1</numbcharacters>
+        <numbCharacters>1</numbCharacters>
         <price>14.36</price>
         <date>10/2019</date>
         <language>English</language>
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="IGR" released="yes">
+    <set id="IGR" released="true">
         <name>Jurassic Park: InGen vs. Raptors</name>
-        <numbcharacters>2</numbcharacters>
+        <numbCharacters>2</numbCharacters>
         <price>25.15</price>
         <date>04/2020</date>
         <language>English</language>
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="CNF" released="yes">
-        <name>Cobble & Fog</name>
+    <set id="CNF" released="true">
+        <name>Cobble &#38; Fog</name>
         <numbCharacters>4</numbCharacters>
         <price>34.15</price>
         <date>07/2020</date>
@@ -46,16 +49,16 @@
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="BVS" released="yes">
+    <set id="BVS" released="true">
         <name>Buffy the Vampire Slayer</name>
-        <numbcharacters>4</numbcharacters>
+        <numbCharacters>4</numbCharacters>
         <price>34.15</price>
         <date>10/2020</date>
         <language>English</language>
         <artist>Heather Vaughan</artist>
     </set>
     
-    <set id="LRB" released="yes">
+    <set id="LRB" released="true">
         <name>Little Red Riding hood vs. Beowulf</name>
         <numbCharacters>2</numbCharacters>
         <price>25.15</price>
@@ -64,16 +67,16 @@
         <artist>Marc Aspinall</artist>
     </set>
     
-    <set id="DPL" released="yes">
+    <set id="DPL" released="true">
         <name>Deadpool</name>
-        <numbcharacters>1</numbcharacters>
+        <numbCharacters>1</numbCharacters>
         <price>14.36</price>
         <date>07/2021</date>
         <language>English</language>
         <artist>Heather Vaughan</artist>
     </set>
     
-    <set id="BL2" released="yes">
+    <set id="BL2" released="true">
         <name>Battle of Legends: Volume Two</name>
         <numbCharacters>4</numbCharacters>
         <price>34.15</price>
@@ -82,34 +85,34 @@
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="MRR" released="yes">
+    <set id="MRR" released="true">
         <name>Marvel's Redemption Row</name>
-        <numbcharacters>3</numbcharacters>
+        <numbCharacters>3</numbCharacters>
         <price>44.95</price>
         <date>04/2022</date>
         <language>English</language>
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="MHK" released="yes">
+    <set id="MHK" released="true">
         <name>Marvel's Hell Kitchen</name>
-        <numbcharacters>3</numbcharacters>
+        <numbCharacters>3</numbCharacters>
         <price>44.95</price>
         <date>04/2022</date>
         <language>English</language>
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="STR" released="yes">
+    <set id="STR" released="true">
         <name>Jurassic Park: Dr. Ellie Sattler vs. T-Rex</name>
-        <numbcharacters>2</numbcharacters>
+        <numbCharacters>2</numbCharacters>
         <price>25.15</price>
         <date>05/2022</date>
         <language>English</language>
         <artist>Oliver Barrett</artist>
     </set>
     
-    <set id="HVG" released="yes">
+    <set id="HVG" released="true">
         <name>Houdini vs. Genie</name>
         <numbCharacters>2</numbCharacters>
         <price>25.15</price>
@@ -118,18 +121,18 @@
         <artist>Peter Diamond</artist>
     </set>
 
-    <set id="MTS" released="no">
+    <set id="MTS" released="false">
         <name>Marvel's Teen Spirit</name>
-        <numbcharacters>3</numbcharacters>
+        <numbCharacters>3</numbCharacters>
         <price>44.95</price>
         <date>04/2023</date>
         <language>English</language>
         <artist>Heather Vaughan</artist>
     </set>
     
-    <set id="MKC" released="no">
+    <set id="MKC" released="false">
         <name>Marvel's For King and Country</name>
-        <numbcharacters>3</numbcharacters>
+        <numbCharacters>3</numbCharacters>
         <price>44.95</price>
         <date>04/2023</date>
         <language>English</language>
