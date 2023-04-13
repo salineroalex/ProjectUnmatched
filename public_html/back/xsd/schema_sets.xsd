@@ -8,12 +8,19 @@
     <!--Here is the data structure for the SETS node-->
     <xsd:element name="sets">
         <xsd:complexType>
+            
+            <!-- Define the structure for the SET node -->
             <xsd:sequence>
                 <xsd:element name="set" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
+                            <!-- Define the structure for the NAME element -->
                             <xsd:element name="name" type="xsd:string"/>
-                            <xsd:element name="numbCharacters" type="xsd:positiveInteger"/>
+                            
+                            <!-- Define the structure for the NUMBCHARACTERS element -->
+                            <xsd:element name="numbCharacters" type="xsd:positiveInteger"/> <!--Since this number can not be negative, we use positiveInteger-->
+                            
+                            <!-- Define the structure for the PRICE element -->
                             <xsd:element name="price">
                                 <!--We wanted to add the price in different currencies so we made the element price as a complexType -->
                                 <xsd:complexType>
@@ -25,10 +32,16 @@
                                     </xsd:sequence>
                                 </xsd:complexType>
                             </xsd:element>
+                            
+                            <!-- Define the structure for the DATE element -->
                             <xsd:element name="date" type="xsd:string"/>
-                            <xsd:element name="language" minOccurs="1" maxOccurs="5">
+                            
+                            <!-- Define the structure for the LANGUAGE element -->
+                            <xsd:element name="language" minOccurs="1" maxOccurs="5"> <!--The game has to be at least in English-->
                                 <xsd:simpleType>
                                     <xsd:restriction base = "xsd:string">
+                                        
+                                        <!-- Define the possible values for the LANGUAGE element -->
                                         <xsd:enumeration value="English"/>
                                         <xsd:enumeration value="Spanish"/>
                                         <xsd:enumeration value="German"/>
@@ -37,8 +50,12 @@
                                     </xsd:restriction>
                                 </xsd:simpleType>
                             </xsd:element>
+                            
+                            <!-- Define the structure for the ARTIST element -->                         
                             <xsd:element name="artist" type="xsd:string"/>
                         </xsd:sequence>
+                        
+                        <!--Both attributes are required for a set to exists-->
                         <xsd:attribute name="id" type="xsd:string" use="required"/>
                         <xsd:attribute name="released" type="xsd:boolean" use="required"/>
                     </xsd:complexType>  
