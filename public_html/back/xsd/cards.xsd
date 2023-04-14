@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="cards">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="card" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="type" type="xsd:string"/>
+                            <xsd:element name="value" type="xsd:integer"/>
+                            <xsd:element name="boost" type="xsd:string"/>
+                            <xsd:element name="effect" type="xsd:string"/>
+                            <xsd:element name="character" type="xsd:string"/>
+                            <xsd:element name="appear" type="xsd:string"/>
+                            <xsd:element name="quantity" type="xsd:integer"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="id">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="[0-9]{3}"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

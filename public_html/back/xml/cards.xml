@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cards>
+<cards xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="../xsd/cards.xsd">
     <card id="001">
         <name>Surprise Attack</name>
         <type>Attack</type>
@@ -445,7 +445,7 @@ After combat: Gain 1 action.</effect>
         <quantity>3</quantity>
     </card>
     
-    <card id="039">
+   <!-- <card id="039">
         <name></name>
         <type></type>
         <value></value>
@@ -454,5 +454,5 @@ After combat: Gain 1 action.</effect>
         <character></character>
         <appear></appear>
         <quantity></quantity>
-    </card>
+    </card>-->
 </cards>
