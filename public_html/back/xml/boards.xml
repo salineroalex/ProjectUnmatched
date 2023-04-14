@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<boards>
+<boards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../xsd/boards.xsd">
     <board>
         <name>Heorot</name>
         <Max.players>2</Max.players>
@@ -61,7 +62,7 @@
         <Max.players>4</Max.players>
         <Spaces>32</Spaces>
         <Zones>7</Zones>
-        <Set>Cobble & Fog</Set>
+        <Set>Cobble and Fog</Set>
         <Notes>Has secret passages which connect distant parts of the map for movement,
         but not for attacks.</Notes>
     </board>
@@ -98,7 +99,7 @@
         <Max.players>4</Max.players>
         <Spaces>29</Spaces>
         <Zones>7</Zones>
-        <Set>Cobble & Fog</Set>
+        <Set>Cobble and Fog</Set>
         <Notes></Notes>
     </board>
     
