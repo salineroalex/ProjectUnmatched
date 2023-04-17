@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Este es el ejemplo, yo (Ander Moreno) voy a hacer desde el 18 hasta el 45-->
+<!-- Este es el ejemplo, yo (Ander Moreno) voy a hacer desde el 18 hasta el 35-->
 
 <heroes>
     <hero id = "18" quantity = "1">
@@ -18,5 +18,255 @@
             <attack>Ranged</attack>
             <healthPoints>6</healthPoints>
         </assistant>
+    </hero>
+    <hero id = "19" quantity = "1">
+        <name>Jakyll & Hyde</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "Start the game as Dr. Jekyll. At the start of your turn, you may transform into
+            Dr. Jekyll or Mr. Hyde.
+
+            While Mr. Hyde: After you Maneuver, take 1 damage.
+
+            Use the transformation token to indicate what he currently is."
+        </specialHability>
+        <healthPoints>16</healthPoints>
+        <move>2</move>
+    </hero>
+    <hero id = "20" quantity = "">
+        <name>Luke Cage</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "Luke Cage takes 2 less combat damage from attacks.
+
+            (When defending, Luke Cage wins combat if he takes no damage, even if he
+            didn't play a card.)"
+        </specialHability>
+        <healthPoints>13</healthPoints>
+        <move>2</move>
+        <assistant quantity = "1">
+            <name>Mist Knight</name>
+            <attack>Ranged</attack>
+            <healthPoints>6</healthPoints>
+        </assistant>
+    </hero>
+    <hero id = "21" quantity = "1">
+        <name>Bloody Mary</name>
+        <attack>Melee</attack>
+        <specialHability>
+            At the start of your turn, if you have exactly 3 cards in hand, gain 1 action.
+        </specialHability>
+        <healthPoints>16</healthPoints>
+        <move>3</move>
+    </hero>
+    <hero id = "22" quantity = "1">
+        <name>Sun Wukong</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "At the start of your turn, you may take 1 damage to summon a Clone in an
+            empty space adjacent to Sun Wukong.
+
+            Do not start with any Clones on the board."
+        </specialHability>
+        <healthPoints>17</healthPoints>
+        <move>2</move>
+        <assistant quantity = "3">
+            <name>Clones</name>
+            <attack>Melee</attack>
+            <healthPoints>1</healthPoints>
+        </assistant>
+    </hero>
+    <hero id = "23" quantity = "1">
+        <name>Ghost Rider</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "Ghost Rider starts the game with 5 Hellfire. When you maneuver you may spend
+            1 Hellfire. If you do, increase Ghost Rider's move value to 4, and he mave move
+            through opposing fighters. Then deal 1 damage to each opposing fighter he
+            moved through."
+        </specialHability>
+        <healthPoints>17</healthPoints>
+        <move>2</move>
+    </hero>
+    <hero id = "24" quantity = "1">
+        <name>Deadpool</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "After you attack, Deadpool recovers 1 health.
+
+            Also, if your opponent's real name is Logan, all your attacks are +5."
+        </specialHability>
+        <healthPoints>10</healthPoints>
+        <move>2</move>
+    </hero>
+    <hero id = "25" quantity = "1">
+        <name>Invisible Man</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "At the start of the game, after you place Invisible Man, place 3 fog tokens in
+            separate spaces in his zone.
+
+            When Invisible Man is on a space with a fog token, add 1 to the value of his
+            defense cards.
+
+            Invisible Man may move between two spaces with fog tokens as if they were
+            adjacent."
+        </specialHability>
+        <healthPoints>15</healthPoints>
+        <move>2</move>
+    </hero>
+    <hero id = "26" quantity = "1">
+        <name>Robert Muldoon</name>
+        <attack>Ranged</attack>
+        <specialHability>
+            "At the start of your turn, you may place a trap.
+
+            Whenever one of your traps is returned to the box, draw a card.
+
+            Muldoon starts with 8 traps."
+        </specialHability>
+        <healthPoints>14</healthPoints>
+        <move>3</move>
+        <assistant quantity = "3">
+            <name>Ingen Workers</name>
+            <attack>Ranged</attack>
+            <healthPoints>1</healthPoints>
+        </assistant>
+    </hero>
+    <hero id = "27" quantity = "1">
+        <name>Yennega</name>
+        <attack>Ranged</attack>
+        <specialHability>
+            "If Yennenga would take damage, you may assign any amount of that damage to
+            one or more Archers in her zone instead. (You may not assign more damage to
+            an Archer than their remaining health.)"
+        </specialHability>
+        <healthPoints>15</healthPoints>
+        <move>2</move>
+        <assistant quantity = "2">
+            <name>Archers</name>
+            <attack>Ranged</attack>
+            <healthPoints>2</healthPoints>
+        </assistant>
+    </hero>
+    <hero id = "28" quantity = "1">
+        <name>King Arthur</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "When King Arthur attacks, you may BOOST that attack. Play the BOOST card,
+            face down, along with your attack card.
+
+            If your opponent cancels the effects on your attack card, the BOOST is discarded
+            without effect."
+        </specialHability>
+        <healthPoints>18</healthPoints>
+        <move>2</move>
+        <assistant quantity = "1">
+            <name>Merlin</name>
+            <attack>Ranged</attack>
+            <healthPoints>7</healthPoints>
+        </assistant>
+    <hero id = "29" quantity = "1">
+        <name>Bullseye</name>
+        <attack>Ranged</attack>
+        <specialHability>
+            Bullseye can attack from up to 5 spaces away (ignoring zones).
+        </specialHability>
+        <healthPoints>14</healthPoints>
+        <move>2</move>
+    </hero></hero>
+    <hero id = "29" quantity = "1">
+        <name>Bullseye</name>
+        <attack>Ranged</attack>
+        <specialHability>
+            Bullseye can attack from up to 5 spaces away (ignoring zones).
+        </specialHability>
+        <healthPoints>14</healthPoints>
+        <move>2</move>
+    </hero>
+    <hero id = "30" quantity = "1">
+        <name>Houdini</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "When you take the maneuver action and BOOST, you may place Houdini in any
+            space instead of moving. (Bess moves as normal.)"
+        </specialHability>
+        <healthPoints>14</healthPoints>
+        <move>2</move>
+        <assistant quantity = "1">
+            <name>Bess</name>
+            <attack>Melee</attack>
+            <healthPoints>5</healthPoints>
+        </assistant>
+    </hero>
+    <hero id = "31" quantity = "3">
+        <name>Moon Knight</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "-Moon Knight:
+            When you take the maneuver action and BOOST, you may place Houdini in any
+            space instead of moving. (Bess moves as normal.)
+            -Khonshu:
+            Khonshu adds +2 to the value of his attack cards. He does not take damage
+            from effects other than combat damage.
+            -Mr. Knight:
+            Mr. Knight adds +1 to all his defense values.
+
+            At the end of your turn, change to your next identity (In order,
+            Moon Knight -> Khonshu -> Mr. Knight, repeating)."
+        </specialHability>
+        <healthPoints>16</healthPoints>
+        <move>3</move>
+    </hero>
+    <hero id = "32" quantity = "3">
+        <name>Raptors</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "Raptors add 1 to the value of their attack cards for each of your other Raptors
+            adjacent to the defender."
+        </specialHability>
+        <healthPoints>7</healthPoints>
+        <move>3</move>
+    </hero>
+    <hero id = "33" quantity = "1">
+        <name>The Geenie</name>
+        <attack>Ranged</attack>
+        <specialHability>
+            At the start of your turn, you may discard 1 card to gain 1 action.
+        </specialHability>
+        <healthPoints>16</healthPoints>
+        <move>3</move>
+    </hero>
+    <hero id = "34" quantity = "1">
+        <name>Elektra</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "The first time Elektra would be defeated, remove her and all Hand from the board.
+            She is not defeated. At the start of your next turn, Resurrect her.
+            (Ignore effects with the RESURRECTED symbol.)
+
+            When Elektra Resurrects: Flip your health dial. Shuffle your discard pile into your
+            deck.
+
+            Place Elektra and all Hand back onto the board with each fighter in a different zone.
+            (You must resolve effects with the RESURRECTED symbol.)"
+        </specialHability>
+        <healthPoints>7</healthPoints>
+        <move>2</move>
+        <assistant quantity = "4">
+            <name>The Hand</name>
+            <attack>Melee</attack>
+            <healthPoints>1</healthPoints>
+        </assistant>
+    </hero>
+    <hero id = "35" quantity = "1">
+        <name>T. Rex</name>
+        <attack>Melee</attack>
+        <specialHability>
+            "T-Rex is a large fighter. (She can attack up to 2 spaces away.) At the end of your
+            turn, draw a card."
+        </specialHability>
+        <healthPoints>27</healthPoints>
+        <move>1</move>
     </hero>
 </heroes>
