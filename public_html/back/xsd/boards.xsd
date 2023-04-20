@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    <xsd:element name="boards">
+        <xsd:complexType>
+            <!-- The tags follow the same order -->
+            <xsd:sequence>
+                <xsd:element name="board" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="maxPlayers" type="xsd:integer"/>
+                            <xsd:element name="spaces" type="xsd:integer"/>
+                            <xsd:element name="zones" type="xsd:integer"/>
+                            <xsd:element name="set" type="xsd:string"/>
+                            <!--<xsd:restriction>
+                                    <xsd:enumeration value=""/>
+                                </xsd:restriction>
+                            </xsd:element>-->
+                            <!-- Some notes tags are empty so I checked my minOccurs at 0 -->
+                            <xsd:element name="notes" type="xsd:string" minOccurs="0"/>            
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
