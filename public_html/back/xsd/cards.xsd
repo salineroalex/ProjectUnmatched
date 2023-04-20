@@ -4,6 +4,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="card" maxOccurs="unbounded">
+                <!--maxOccurs must be value unbounded so that we can add more than 1 card-->
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="name" type="xsd:string"/>
@@ -18,6 +19,7 @@
                         <xsd:attribute name="id">
                             <xsd:simpleType>
                                 <xsd:restriction base="xsd:string">
+                                    <!--We want the id to have 3 digits with numbers between 0 and 9-->
                                     <xsd:pattern value="[0-9]{3}"/>
                                 </xsd:restriction>
                             </xsd:simpleType>
