@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="set">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="name" type="xsd:string"/>
+                <xsd:element name="numbChatacters" type="xsd:integer"/>
+                <xsd:element name="price" type="xsd:float"/>
+                <xsd:element name="date" type="xsd:string"/>
+                <xsd:element name="language" type="xsd:string"/>
+                <xsd:element name="artis" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:element name="card">
+    </xsd:element>
+    
+    <xsd:element name="board">
+    </xsd:element>
+    
+    <xsd:element name="hero">
+    </xsd:element>
+</xs:schema>
