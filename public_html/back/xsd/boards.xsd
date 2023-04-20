@@ -10,16 +10,22 @@ and open the template in the editor.
             elementFormDefault="qualified">
     <xsd:element name="boards">
         <xsd:complexType>
+            <!-- The tags follow the same order -->
             <xsd:sequence>
                 <xsd:element name="board" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="name" type="xsd:string"/>
-                            <xsd:element name="Max.players" type="xsd:integer"/>
-                            <xsd:element name="Spaces" type="xsd:integer"/>
-                            <xsd:element name="Zones" type="xsd:integer"/>
-                            <xsd:element name="Set" type="xsd:string"/>
-                            <xsd:element name="Notes" type="xsd:string"/>
+                            <xsd:element name="maxPlayers" type="xsd:integer"/>
+                            <xsd:element name="spaces" type="xsd:integer"/>
+                            <xsd:element name="zones" type="xsd:integer"/>
+                            <xsd:element name="set" type="xsd:string"/>
+                            <!--<xsd:restriction>
+                                    <xsd:enumeration value=""/>
+                                </xsd:restriction>
+                            </xsd:element>-->
+                            <!-- Some notes tags are empty so I checked my minOccurs at 0 -->
+                            <xsd:element name="notes" type="xsd:string" minOccurs="0"/>            
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>

@@ -3,113 +3,113 @@
          xsi:noNamespaceSchemaLocation="../xsd/boards.xsd">
     <board>
         <name>Heorot</name>
-        <Max.players>2</Max.players>
-        <Spaces>30</Spaces>
-        <Zones>7</Zones>
-        <Set>Little Red Riding Hood vs. Beowulf</Set>
-        <Notes>Has doors which can be opened and closed to impede movement and attacks.</Notes>
+        <maxPlayers>2</maxPlayers>
+        <spaces>30</spaces>
+        <zones>7</zones>
+        <set>Little Red Riding Hood vs. Beowulf</set>
+        <notes>Has doors which can be opened and closed to impede movement and attacks.</notes>
     </board>
     
     <board>
         <name>Marmoeal</name>
-        <Max.players>4</Max.players>
-        <Spaces>31</Spaces>
-        <Zones>8</Zones>
-        <Set>Battle of Legends: Volume One</Set>
-        <Notes></Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>31</spaces>
+        <zones>8</zones>
+        <set>Battle of Legends: Volume One</set>
+        <notes></notes>
     </board>
     
     <board>
         <name>Hanging Gardens</name>
-        <Max.players>4</Max.players>
-        <Spaces>33</Spaces>
-        <Zones>8</Zones>
-        <Set>Battle of Legends: Volume Two</Set>
-        <Notes>"Has ""high ground"" spaces which give attack bonuses to fighters attacking from
-        them."</Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>33</spaces>
+        <zones>8</zones>
+        <set>Battle of Legends: Volume Two</set>
+        <notes>"Has ""high ground"" spaces which give attack bonuses to fighters attacking from
+        them."</notes>
     </board>
     
     <board>
         <name>The Raft</name>
-        <Max.players>4</Max.players>
-        <Spaces>31</Spaces>
-        <Zones>8</Zones>
-        <Set>Redemption Row</Set>
-        <Notes>"Has "battlefield items" which act as playable schemes or BOOST effects during
-        combat if you are on the space attached to the token."</Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>31</spaces>
+        <zones>8</zones>
+        <set>Redemption Row</set>
+        <notes>"Has "battlefield items" which act as playable schemes or BOOST effects during
+        combat if you are on the space attached to the token."</notes>
     </board>
     
     <board>
         <name>Sarpedon</name>
-        <Max.players>4</Max.players>
-        <Spaces>38</Spaces>
-        <Zones>6</Zones>
-        <Set>Battle of Legends: Volume One</Set>
-        <Notes></Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>38</spaces>
+        <zones>6</zones>
+        <set>Battle of Legends: Volume One</set>
+        <notes></notes>
     </board>
     
     <board>
         <name>Sherwood Forest</name>
-        <Max.players>2</Max.players>
-        <Spaces>30</Spaces>
-        <Zones>7</Zones>
-        <Set>Robin Hood vs. Bigfoot</Set>
-        <Notes></Notes>
+        <maxPlayers>2</maxPlayers>
+        <spaces>30</spaces>
+        <zones>7</zones>
+        <set>Robin Hood vs. Bigfoot</set>
+        <notes></notes>
     </board>
     
     <board>
         <name>Baskerville Manor</name>
-        <Max.players>4</Max.players>
-        <Spaces>32</Spaces>
-        <Zones>7</Zones>
-        <Set>Cobble and Fog</Set>
-        <Notes>Has secret passages which connect distant parts of the map for movement,
-        but not for attacks.</Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>32</spaces>
+        <zones>7</zones>
+        <set>Cobble and Fog</set>
+        <notes>Has secret passages which connect distant parts of the map for movement,
+        but not for attacks.</notes>
     </board>
     
     <board>
         <name>Sunnydale High</name>
-        <Max.players>4</Max.players>
-        <Spaces>31</Spaces>
-        <Zones>6</Zones>
-        <Set>Buffy the Vampire Slayer</Set>
-        <Notes></Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>31</spaces>
+        <zones>6</zones>
+        <set>Buffy the Vampire Slayer</set>
+        <notes></notes>
     </board>
     
     <board>
         <name>The Bronze</name>
-        <Max.players>4</Max.players>
-        <Spaces>35</Spaces>
-        <Zones>6</Zones>
-        <Set>Buffy the Vampire Slayer</Set>
-        <Notes></Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>35</spaces>
+        <zones>6</zones>
+        <set>Buffy the Vampire Slayer</set>
+        <notes></notes>
     </board>
     
     <board>
         <name>Raptor Paddock</name>
-        <Max.players>2</Max.players>
-        <Spaces>28</Spaces>
-        <Zones>6</Zones>
-        <Set>Jurassic Park - Ingen vs. Raptors</Set>
-        <Notes>Has one-way arrows.</Notes>
+        <maxPlayers>2</maxPlayers>
+        <spaces>28</spaces>
+        <zones>6</zones>
+        <set>Jurassic Park - Ingen vs. Raptors</set>
+        <notes>Has one-way arrows.</notes>
     </board>
     
     <board>
         <name>SoHo</name>
-        <Max.players>4</Max.players>
-        <Spaces>29</Spaces>
-        <Zones>7</Zones>
-        <Set>Cobble and Fog</Set>
-        <Notes></Notes>
+        <maxPlayers>4</maxPlayers>
+        <spaces>29</spaces>
+        <zones>7</zones>
+        <set>Cobble and Fog</set>
+        <notes></notes>
     </board>
     
      <board>
         <name>Yukon</name>
-        <Max.players>2</Max.players>
-        <Spaces>31</Spaces>
-        <Zones>7</Zones>
-        <Set>Robin Hood vs. Bigfoot</Set>
-        <Notes></Notes>
+        <maxPlayers>2</maxPlayers>
+        <spaces>31</spaces>
+        <zones>7</zones>
+        <set>Robin Hood vs. Bigfoot</set>
+        <notes></notes>
     </board>
     
 </boards>
