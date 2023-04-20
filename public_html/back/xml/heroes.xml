@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<heroes>
+<heroes
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "../xsd/schema_heroes.xsd">
 
-    <hero id = "1" quantity = "1">
+    <hero id = "01" quantity = "1">
         <name>Alice</name>
         <attack>Melee</attack>
         <specialHability>
@@ -21,7 +23,7 @@
         </assistant>
     </hero>
 
-    <hero id = "2" quantity = "1">
+    <hero id = "02" quantity = "1">
         <name>Bigfoot</name>
         <attack>Melee</attack>
         <specialHability>
@@ -37,7 +39,7 @@
         </assistant>
     </hero>
 
-    <hero id = "3" quantity = "1">
+    <hero id = "03" quantity = "1">
         <name>Dracula</name>
         <attack>Melee</attack>
         <specialHability>
@@ -53,7 +55,7 @@
         </assistant>
     </hero>
 
-    <hero id = "4" quantity = "1">
+    <hero id = "04" quantity = "1">
         <name>Bruce Lee</name>
         <attack>Melee</attack>
         <specialHability>
@@ -61,10 +63,9 @@
         </specialHability>
         <healthPoints>14</healthPoints>
         <move>3</move>
-        <assistant quantity = "0"/>
     </hero>
 
-    <hero id = "5" quantity = "1">
+    <hero id = "05" quantity = "1">
         <name>Daredevil</name>
         <attack>Melee</attack>
         <specialHability>
@@ -75,10 +76,9 @@
         </specialHability>
         <healthPoints>17</healthPoints>
         <move>3</move>
-        <assistant quantity = "0"/>
     </hero>
 
-    <hero id = "6" quantity = "1">
+    <hero id = "06" quantity = "1">
         <name>Medusa</name>
         <attack>Ranged</attack>
         <specialHability>
@@ -94,7 +94,7 @@
         </assistant>
     </hero>
     
-    <hero id = "7" quantity = "1">
+    <hero id = "07" quantity = "1">
         <name>Robin Hood</name>
         <attack>Ranged</attack>
         <specialHability>
@@ -109,7 +109,7 @@
         </assistant>
     </hero>
     
-    <hero id = "8" quantity = "1">
+    <hero id = "08" quantity = "1">
         <name>Sherlock Holmes</name>
         <attack>Melee</attack>
         <specialHability>
@@ -127,7 +127,7 @@
         </assistant>
     </hero>
     
-    <hero id = "9" quantity = "1">
+    <hero id = "09" quantity = "1">
         <name>Sinbad</name>
         <attack>Melee</attack>
         <specialHability>
@@ -232,7 +232,7 @@
             -Add +2 to the value of all Achilles' attacks.
             -If Achilles wins combat, draw 1 card.
         </specialHability>
-        <healthPoints/>
+        <healthPoints>0</healthPoints>
         <move>2</move>
         <assistant quantity = "1">
             <name>Patroclus</name>
@@ -278,7 +278,7 @@
     </hero>
     
     <hero id = "18" quantity = "1">
-        <name>Jekyll & Hyde</name>
+        <name>Jekyll &#38; Hyde</name>
         <attack>Melee</attack>
         <specialHability>
             Start the game as Dr. Jekyll. At the start of your turn, you may transform into
@@ -290,11 +290,11 @@
         </specialHability>
         <healthPoints>16</healthPoints>
         <move>2</move>
-        <assistant quantity = "0"/>
     </hero>
-
+  
+    
     <hero id = "19" quantity = "1">
-        <name>Jakyll & Hyde</name>
+        <name>Jakyll &#38; Hyde</name>
         <attack>Melee</attack>
         <specialHability>
             "Start the game as Dr. Jekyll. At the start of your turn, you may transform into
@@ -307,7 +307,7 @@
         <healthPoints>16</healthPoints>
         <move>2</move>
     </hero>
-    <hero id = "20" quantity = "">
+    <hero id = "20" quantity = "1">
         <name>Luke Cage</name>
         <attack>Melee</attack>
         <specialHability>
@@ -440,7 +440,7 @@
             <attack>Ranged</attack>
             <healthPoints>7</healthPoints>
         </assistant>
-
+    </hero>
     <hero id = "29" quantity = "1">
         <name>Bullseye</name>
         <attack>Ranged</attack>
@@ -450,7 +450,6 @@
         <healthPoints>14</healthPoints>
         <move>2</move>
     </hero>
-    
     <hero id = "30" quantity = "1">
         <name>Houdini</name>
         <attack>Melee</attack>
