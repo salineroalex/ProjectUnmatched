@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sets 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "../xsd/schema_sets.xsd">
+    
+    <set id="BL1" released="true">
+        <name>Battle of Legends: Volumen One</name>
+        <numbCharacters>4</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>39.99</EUR>
+            <GBP>35.99</GBP>
+            <JPY>5999.99</JPY>
+        </price>
+        <date>09/2019</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="RHB" released="true">
+        <name>Robin Hood vs. Bigfoot</name>
+        <numbCharacters>2</numbCharacters>
+        <price>
+            <USD>32.99</USD>
+            <EUR>29.99</EUR>
+            <GBP>26.99</GBP>
+            <JPY>4499.99</JPY>
+        </price>
+        <date>10/2019</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="LEE" released="true">
+        <name>Bruce Lee</name>
+        <numbCharacters>1</numbCharacters>
+        <price>
+            <USD>18.99</USD>
+            <EUR>16.99</EUR>
+            <GBP>14.99</GBP>
+            <JPY>2499.99</JPY>
+        </price>
+        <date>10/2019</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="IGR" released="true">
+        <name>Jurassic Park: InGen vs. Raptors</name>
+        <numbCharacters>2</numbCharacters>
+        <price>
+            <USD>32.99</USD>
+            <EUR>29.99</EUR>
+            <GBP>26.99</GBP>
+            <JPY>4499.99</JPY>
+        </price>
+        <date>04/2020</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="CNF" released="true">
+        <name>Cobble &#38; Fog</name>
+        <numbCharacters>4</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>39.99</EUR>
+            <GBP>35.99</GBP>
+            <JPY>5999.99</JPY>
+        </price>
+        <date>07/2020</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="BVS" released="true">
+        <name>Buffy the Vampire Slayer</name>
+        <numbCharacters>4</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>39.99</EUR>
+            <GBP>35.99</GBP>
+            <JPY>5999.99</JPY>
+        </price>
+        <date>10/2020</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Heather Vaughan</artist>
+    </set>
+    
+    <set id="LRB" released="true">
+        <name>Little Red Riding hood vs. Beowulf</name>
+        <numbCharacters>2</numbCharacters>
+        <price>
+            <USD>32.99</USD>
+            <EUR>29.99</EUR>
+            <GBP>26.99</GBP>
+            <JPY>4499.99</JPY>
+        </price>
+        <date>12/2020</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Marc Aspinall</artist>
+    </set>
+    
+    <set id="DPL" released="true">
+        <name>Deadpool</name>
+        <numbCharacters>1</numbCharacters>
+        <price>
+            <USD>18.99</USD>
+            <EUR>16.99</EUR>
+            <GBP>14.99</GBP>
+            <JPY>2499.99</JPY>
+        </price>
+        <date>07/2021</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Heather Vaughan</artist>
+    </set>
+    
+    <set id="BL2" released="true">
+        <name>Battle of Legends: Volume Two</name>
+        <numbCharacters>4</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>39.99</EUR>
+            <GBP>35.99</GBP>
+            <JPY>5999.99</JPY>
+        </price>
+        <date>01/2022</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="MRR" released="true">
+        <name>Marvel's Redemption Row</name>
+        <numbCharacters>3</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>44.99</EUR>
+            <GBP>39.99</GBP>
+            <JPY>6699.99</JPY>
+        </price>
+        <date>04/2022</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="MHK" released="true">
+        <name>Marvel's Hell Kitchen</name>
+        <numbCharacters>3</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>44.99</EUR>
+            <GBP>39.99</GBP>
+            <JPY>6699.99</JPY>
+        </price>
+        <date>04/2022</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="STR" released="true">
+        <name>Jurassic Park: Dr. Ellie Sattler vs. T-Rex</name>
+        <numbCharacters>2</numbCharacters>
+        <price>
+            <USD>32.99</USD>
+            <EUR>29.99</EUR>
+            <GBP>26.99</GBP>
+            <JPY>4499.99</JPY>
+        </price>
+        <date>05/2022</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Oliver Barrett</artist>
+    </set>
+    
+    <set id="HVG" released="true">
+        <name>Houdini vs. Genie</name>
+        <numbCharacters>2</numbCharacters>
+        <price>
+            <USD>32.99</USD>
+            <EUR>29.99</EUR>
+            <GBP>26.99</GBP>
+            <JPY>4499.99</JPY>
+        </price>
+        <date>12/2022</date>
+        <language>English</language>
+        <language>Spanish</language>
+        <language>German</language>
+        <language>French</language>
+        <language>Japanese</language>
+        <artist>Peter Diamond</artist>
+    </set>
+
+    <set id="MTS" released="false">
+        <name>Marvel's Teen Spirit</name>
+        <numbCharacters>3</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>44.99</EUR>
+            <GBP>39.99</GBP>
+            <JPY>6699.99</JPY>
+        </price>
+        <date>04/2023</date>
+        <language>English</language>
+        <artist>Heather Vaughan</artist>
+    </set>
+    
+    <set id="MKC" released="false">
+        <name>Marvel's For King and Country</name>
+        <numbCharacters>3</numbCharacters>
+        <price>
+            <USD>49.99</USD>
+            <EUR>44.99</EUR>
+            <GBP>39.99</GBP>
+            <JPY>6699.99</JPY>
+        </price>
+        <date>04/2023</date>
+        <language>English</language>
+        <artist>Heather Vaughan</artist>
+    </set>
+
+</sets>
+
