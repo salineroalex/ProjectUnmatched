@@ -292,8 +292,7 @@
         <move>2</move>
         <assistant quantity = "0"/>
     </hero>
-  
-    
+
     <hero id = "19" quantity = "1">
         <name>Jakyll & Hyde</name>
         <attack>Melee</attack>
@@ -441,16 +440,7 @@
             <attack>Ranged</attack>
             <healthPoints>7</healthPoints>
         </assistant>
-        <hero id = "29" quantity = "1">
-            <name>Bullseye</name>
-            <attack>Ranged</attack>
-            <specialHability>
-                Bullseye can attack from up to 5 spaces away (ignoring zones).
-            </specialHability>
-            <healthPoints>14</healthPoints>
-            <move>2</move>
-        </hero>
-    </hero>
+
     <hero id = "29" quantity = "1">
         <name>Bullseye</name>
         <attack>Ranged</attack>
@@ -460,6 +450,7 @@
         <healthPoints>14</healthPoints>
         <move>2</move>
     </hero>
+    
     <hero id = "30" quantity = "1">
         <name>Houdini</name>
         <attack>Melee</attack>
