@@ -22,6 +22,7 @@
                                         <!-- Some notes tags are empty so I checked my minOccurs at 0 -->
                                         <xsd:element name="notes" type="xsd:string" minOccurs="0"/>            
                                     </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:string" use="required"/>
                                 </xsd:complexType>
                             </xsd:element>
                         </xsd:sequence>
@@ -68,11 +69,11 @@
                                     <xsd:sequence>
                             
                                         <!-- Defines structure of the NAME element-->
-                                        <xsd:element name="name" type="xs:string"/>
+                                        <xsd:element name="name" type="xsd:string"/>
                                         <!-- Defines structure of the ATTACK element-->
                                         <xsd:element name="attack">
                                             <xsd:simpleType>
-                                                <xsd:restriction base="xs:string">
+                                                <xsd:restriction base="xsd:string">
                                         
                                                     <!-- ATTACK element can only be Melee or Ranged -->
                                                     <xsd:enumeration value="Melee"/>
@@ -82,13 +83,13 @@
                                         </xsd:element>
                             
                                         <!-- Defines structure of the SPECIAL HABILITY element-->
-                                        <xsd:element name="specialHability" type="xs:string"/>
+                                        <xsd:element name="specialHability" type="xsd:string"/>
                             
                                         <!-- Defines structure of the HEALTH POINTS element-->
-                                        <xsd:element name="healthPoints" type="xs:integer"/>
+                                        <xsd:element name="healthPoints" type="xsd:integer"/>
                             
                                         <!-- Defines structure of the MOVE element-->
-                                        <xsd:element name="move" type="xs:integer"/>
+                                        <xsd:element name="move" type="xsd:integer"/>
                             
                                         <!-- Defines structure of the ASSISTANT element-->
                                         <xsd:element name="assistant" minOccurs="0" maxOccurs="unbounded">
@@ -96,28 +97,28 @@
                                                 <xsd:sequence>
                                         
                                                     <!-- Defines structure of the NAME element-->
-                                                    <xsd:element name="name" type="xs:string"/>
+                                                    <xsd:element name="name" type="xsd:string"/>
                                                     <!-- Defines structure of the ATTACK element-->
                                                     <xsd:element name="attack">
                                                         <xsd:simpleType>
-                                                            <xsd:restriction base="xs:string">
+                                                            <xsd:restriction base="xsd:string">
                                                                 <xsd:enumeration value="Melee"/>
                                                                 <xsd:enumeration value="Ranged"/>
                                                             </xsd:restriction>
                                                         </xsd:simpleType>
                                                     </xsd:element>
                                                     <!-- Defines structure of the HEALTH POINTS element-->
-                                                    <xsd:element name="healthPoints" type="xs:integer"/>
+                                                    <xsd:element name="healthPoints" type="xsd:integer"/>
                                                 </xsd:sequence>
                                                 <!-- Defines structure of the QUANTITY attribute for ASSISTANT-->
-                                                <xsd:attribute name="quantity" type="xs:integer" use="required"/>
+                                                <xsd:attribute name="quantity" type="xsd:integer" use="required"/>
                                             </xsd:complexType>
                                         </xsd:element>
                                     </xsd:sequence>
                         
                                     <!-- Defines structure of the ID AND QUANTITY attributes for HERO-->
-                                    <xsd:attribute name="id" type="xs:integer" use="required"/>
-                                    <xsd:attribute name="quantity" type="xs:integer" use="required"/>
+                                    <xsd:attribute name="id" type="xsd:integer" use="required"/>
+                                    <xsd:attribute name="quantity" type="xsd:integer" use="required"/>
                                 </xsd:complexType>
                             </xsd:element>
                         </xsd:sequence>
