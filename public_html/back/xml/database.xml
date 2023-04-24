@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../xsd/schema.xsd"?>
 <unmatched>
     <boards>
-        <board>
+        <board id="HRT">
             <name>Heorot</name>
             <maxPlayers>2</maxPlayers>
             <spaces>30</spaces>
@@ -11,7 +11,7 @@
             <notes>Has doors which can be opened and closed to impede movement and attacks.</notes>
         </board>
     
-        <board>
+        <board id="MRM">
             <name>Marmoeal</name>
             <maxPlayers>4</maxPlayers>
             <spaces>31</spaces>
@@ -20,7 +20,7 @@
             <notes></notes>
         </board>
     
-        <board>
+        <board id="HGD">
             <name>Hanging Gardens</name>
             <maxPlayers>4</maxPlayers>
             <spaces>33</spaces>
@@ -30,7 +30,7 @@
                 them."</notes>
         </board>
     
-        <board>
+        <board id="RFT">
             <name>The Raft</name>
             <maxPlayers>4</maxPlayers>
             <spaces>31</spaces>
@@ -40,7 +40,7 @@
                 combat if you are on the space attached to the token."</notes>
         </board>
     
-        <board>
+        <board id="SRP">
             <name>Sarpedon</name>
             <maxPlayers>4</maxPlayers>
             <spaces>38</spaces>
@@ -49,7 +49,7 @@
             <notes></notes>
         </board>
     
-        <board>
+        <board id="SFT">
             <name>Sherwood Forest</name>
             <maxPlayers>2</maxPlayers>
             <spaces>30</spaces>
@@ -58,7 +58,7 @@
             <notes></notes>
         </board>
     
-        <board>
+        <board id="BKM">
             <name>Baskerville Manor</name>
             <maxPlayers>4</maxPlayers>
             <spaces>32</spaces>
@@ -68,7 +68,7 @@
                 but not for attacks.</notes>
         </board>
     
-        <board>
+        <board id="SDH">
             <name>Sunnydale High</name>
             <maxPlayers>4</maxPlayers>
             <spaces>31</spaces>
@@ -77,7 +77,7 @@
             <notes></notes>
         </board>
     
-        <board>
+        <board id="BRZ">
             <name>The Bronze</name>
             <maxPlayers>4</maxPlayers>
             <spaces>35</spaces>
@@ -86,7 +86,7 @@
             <notes></notes>
         </board>
     
-        <board>
+        <board id="RPK">
             <name>Raptor Paddock</name>
             <maxPlayers>2</maxPlayers>
             <spaces>28</spaces>
@@ -95,7 +95,7 @@
             <notes>Has one-way arrows.</notes>
         </board>
     
-        <board>
+        <board id="SOH">
             <name>SoHo</name>
             <maxPlayers>4</maxPlayers>
             <spaces>29</spaces>
@@ -104,7 +104,7 @@
             <notes></notes>
         </board>
     
-        <board>
+        <board id="YKN">
             <name>Yukon</name>
             <maxPlayers>2</maxPlayers>
             <spaces>31</spaces>
