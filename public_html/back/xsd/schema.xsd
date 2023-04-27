@@ -3,40 +3,70 @@
     <xsd:element name="unmatched">
         <xsd:complexType>
             <xsd:sequence>
+                
+                <!--Here is the data structure for the BOARDS node-->
                 <xsd:element name="boards">
                     <xsd:complexType>
-                        <!-- The tags follow the same order -->
                         <xsd:sequence>
+                            
+                            <!--Here is the data structure for the BOARD element-->
                             <xsd:element name="board" maxOccurs="unbounded">
                                 <xsd:complexType>
                                     <xsd:sequence>
                                         <xsd:element name="name" type="xsd:string"/>
-                                        <xsd:element name="maxPlayers" type="xsd:integer"/>
+                                        
+                                        <xsd:element name="maxPlayers"> <!--Boards are designed for 2 or 4 players-->
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:integer">
+                                                    <xsd:pattern value="[2|4]"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        
                                         <xsd:element name="spaces" type="xsd:integer"/>
                                         <xsd:element name="zones" type="xsd:integer"/>
                                         <xsd:element name="set" type="xsd:string"/>
-                                        <!--<xsd:restriction>
-                                                <xsd:enumeration value=""/>
-                                            </xsd:restriction>
-                                        </xsd:element>-->
-                                        <!-- Some notes tags are empty so I checked my minOccurs at 0 -->
-                                        <xsd:element name="notes" type="xsd:string" minOccurs="0"/>            
+                                        <!--TODO: find a way to restrict the set name to a set already in the database-->
+
+                                        <xsd:element name="notes" type="xsd:string" minOccurs="0"/> <!-- As notes on a board are optional, minOccurs is set to 0 -->          
                                     </xsd:sequence>
-                                    <xsd:attribute name="id" type="xsd:string" use="required"/>
+                                    
+                                    <xsd:attribute name="id" use="required">
+                                        <xsd:simpleType>
+                                            <xsd:restriction base="xsd:string">
+                                                <xsd:pattern value="[A-Z|0-9]{3}"/>
+                                            </xsd:restriction>
+                                        </xsd:simpleType>
+                                    </xsd:attribute>
+                                    
                                 </xsd:complexType>
                             </xsd:element>
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
+                
+                <!--Here is the data structure for the CARDS node-->
                 <xsd:element name="cards">
                     <xsd:complexType>
                         <xsd:sequence>
+                            
+                            <!--Here is the data structure for the CARD element-->
                             <xsd:element name="card" maxOccurs="unbounded">
                                 <!--maxOccurs must be value unbounded so that we can add more than 1 card-->
                                 <xsd:complexType>
                                     <xsd:sequence>
                                         <xsd:element name="name" type="xsd:string"/>
-                                        <xsd:element name="type" type="xsd:string"/>
+                                        <xsd:element name="type">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:enumeration value="Attack"/>
+                                                    <xsd:enumeration value="Defense"/>
+                                                    <xsd:enumeration value="Scheme"/>
+                                                    <xsd:enumeration value="Versatile"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        
                                         <xsd:element name="value" type="xsd:integer"/>
                                         <xsd:element name="boost" type="xsd:string"/>
                                         <xsd:element name="effect" type="xsd:string"/>
@@ -124,6 +154,7 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
+                
                 <!--Here is the data structure for the SETS node-->
                 <xsd:element name="sets">
                     <xsd:complexType>
@@ -178,6 +209,7 @@
                                     <xsd:attribute name="id" type="xsd:string" use="required"/>
                                     <xsd:attribute name="released" type="xsd:boolean" use="required"/>
                                 </xsd:complexType>  
+                                
                             </xsd:element>
                         </xsd:sequence>           
                     </xsd:complexType>
