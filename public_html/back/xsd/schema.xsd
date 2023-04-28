@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="unmatched">
+        <xsd:complexType>
+            <xsd:sequence>
+                
+                <!--Here is the data structure for the BOARDS node-->
+                <xsd:element name="boards">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            
+                            <!--Here is the data structure for the BOARD element-->
+                            <xsd:element name="board" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        
+                                        <xsd:element name="maxPlayers"> <!--Boards are designed for 2 or 4 players-->
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:integer">
+                                                    <xsd:pattern value="[2|4]"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        
+                                        <xsd:element name="spaces" type="xsd:integer"/>
+                                        <xsd:element name="zones" type="xsd:integer"/>
+                                        <xsd:element name="set" type="xsd:string"/>
+                                        <!--TODO: find a way to restrict the set name to a set already in the database-->
+
+                                        <xsd:element name="notes" type="xsd:string" minOccurs="0"/> <!-- As notes on a board are optional, minOccurs is set to 0 -->          
+                                    </xsd:sequence>
+                                    
+                                    <xsd:attribute name="id" use="required">
+                                        <xsd:simpleType>
+                                            <xsd:restriction base="xsd:string">
+                                                <xsd:pattern value="[A-Z|0-9]{3}"/>
+                                            </xsd:restriction>
+                                        </xsd:simpleType>
+                                    </xsd:attribute>
+                                    
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                
+                <!--Here is the data structure for the CARDS node-->
+                <xsd:element name="cards">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            
+                            <!--Here is the data structure for the CARD element-->
+                            <xsd:element name="card" maxOccurs="unbounded">
+                                <!--maxOccurs must be value unbounded so that we can add more than 1 card-->
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="type">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:enumeration value="Attack"/>
+                                                    <xsd:enumeration value="Defense"/>
+                                                    <xsd:enumeration value="Scheme"/>
+                                                    <xsd:enumeration value="Versatile"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        
+                                        <xsd:element name="value" type="xsd:integer"/>
+                                        <xsd:element name="boost" type="xsd:string"/>
+                                        <xsd:element name="effect" type="xsd:string"/>
+                                        <xsd:element name="character" type="xsd:string"/>
+                                        <xsd:element name="appear" type="xsd:string"/>
+                                        <xsd:element name="quantity" type="xsd:integer"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id">
+                                        <xsd:simpleType>
+                                            <xsd:restriction base="xsd:string">
+                                                <!--We want the id to have 3 digits with numbers between 0 and 9-->
+                                                <xsd:pattern value="[0-9]{3}"/>
+                                            </xsd:restriction>
+                                        </xsd:simpleType>
+                                    </xsd:attribute>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="heroes">
+                    <xsd:complexType>
+            
+                        <!--Defines the structure of the HEROES node-->
+                        <xsd:sequence>
+                            <xsd:element name="hero" maxOccurs="unbounded">
+                                <xsd:complexType>
+                        
+                                    <!--Defines the structure of the HERO node-->
+                                    <xsd:sequence>
+                            
+                                        <!-- Defines structure of the NAME element-->
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <!-- Defines structure of the ATTACK element-->
+                                        <xsd:element name="attack">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                        
+                                                    <!-- ATTACK element can only be Melee or Ranged -->
+                                                    <xsd:enumeration value="Melee"/>
+                                                    <xsd:enumeration value="Ranged"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                            
+                                        <!-- Defines structure of the SPECIAL HABILITY element-->
+                                        <xsd:element name="specialHability" type="xsd:string"/>
+                            
+                                        <!-- Defines structure of the HEALTH POINTS element-->
+                                        <xsd:element name="healthPoints" type="xsd:integer"/>
+                            
+                                        <!-- Defines structure of the MOVE element-->
+                                        <xsd:element name="move" type="xsd:integer"/>
+                            
+                                        <!-- Defines structure of the ASSISTANT element-->
+                                        <xsd:element name="assistant" minOccurs="0" maxOccurs="unbounded">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                        
+                                                    <!-- Defines structure of the NAME element-->
+                                                    <xsd:element name="name" type="xsd:string"/>
+                                                    <!-- Defines structure of the ATTACK element-->
+                                                    <xsd:element name="attack">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:string">
+                                                                <xsd:enumeration value="Melee"/>
+                                                                <xsd:enumeration value="Ranged"/>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <!-- Defines structure of the HEALTH POINTS element-->
+                                                    <xsd:element name="healthPoints" type="xsd:integer"/>
+                                                </xsd:sequence>
+                                                <!-- Defines structure of the QUANTITY attribute for ASSISTANT-->
+                                                <xsd:attribute name="quantity" type="xsd:integer" use="required"/>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                        
+                                    <!-- Defines structure of the ID AND QUANTITY attributes for HERO-->
+                                    <xsd:attribute name="id" type="xsd:integer" use="required"/>
+                                    <xsd:attribute name="quantity" type="xsd:integer" use="required"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                
+                <!--Here is the data structure for the SETS node-->
+                <xsd:element name="sets">
+                    <xsd:complexType>
+            
+                        <!-- Define the structure for the SET node -->
+                        <xsd:sequence>
+                            <xsd:element name="set" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <!-- Define the structure for the NAME element -->
+                                        <xsd:element name="name" type="xsd:string"/>
+                            
+                                        <!-- Define the structure for the NUMBCHARACTERS element -->
+                                        <xsd:element name="numbCharacters" type="xsd:positiveInteger"/> <!--Since this number can not be negative, we use positiveInteger-->
+                            
+                                        <!-- Define the structure for the PRICE element -->
+                                        <xsd:element name="price">
+                                            <!--We wanted to add the price in different currencies so we made the element price as a complexType -->
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="USD" type="xsd:decimal"/>
+                                                    <xsd:element name="EUR" type="xsd:decimal"/>
+                                                    <xsd:element name="GBP" type="xsd:decimal"/>
+                                                    <xsd:element name="JPY" type="xsd:decimal"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                            
+                                        <!-- Define the structure for the DATE element -->
+                                        <xsd:element name="date" type="xsd:string"/>
+                            
+                                        <!-- Define the structure for the LANGUAGE element -->
+                                        <xsd:element name="language" minOccurs="1" maxOccurs="5"> <!--The game has to be at least in English-->
+                                            <xsd:simpleType>
+                                                <xsd:restriction base = "xsd:string">
+                                        
+                                                    <!-- Define the possible values for the LANGUAGE element -->
+                                                    <xsd:enumeration value="English"/>
+                                                    <xsd:enumeration value="Spanish"/>
+                                                    <xsd:enumeration value="German"/>
+                                                    <xsd:enumeration value="French"/>
+                                                    <xsd:enumeration value="Japanese"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                            
+                                        <!-- Define the structure for the ARTIST element -->                         
+                                        <xsd:element name="artist" type="xsd:string"/>
+                                    </xsd:sequence>
+                        
+                                    <!--Both attributes are required for a set to exists-->
+                                    <xsd:attribute name="id" type="xsd:string" use="required"/>
+                                    <xsd:attribute name="released" type="xsd:boolean" use="required"/>
+                                </xsd:complexType>  
+                                
+                            </xsd:element>
+                        </xsd:sequence>           
+                    </xsd:complexType>
+                </xsd:element> 
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
