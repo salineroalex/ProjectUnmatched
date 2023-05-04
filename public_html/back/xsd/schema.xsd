@@ -87,15 +87,15 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
+                
+                <!--Here is the data structure for the HEROES node-->
                 <xsd:element name="heroes">
                     <xsd:complexType>
-            
-                        <!--Defines the structure of the HEROES node-->
                         <xsd:sequence>
+                            
+                            <!--Defines the structure of the HERO node-->
                             <xsd:element name="hero" maxOccurs="unbounded">
                                 <xsd:complexType>
-                        
-                                    <!--Defines the structure of the HERO node-->
                                     <xsd:sequence>
                             
                                         <!-- Defines structure of the NAME element-->
@@ -104,7 +104,6 @@
                                         <xsd:element name="attack">
                                             <xsd:simpleType>
                                                 <xsd:restriction base="xsd:string">
-                                        
                                                     <!-- ATTACK element can only be Melee or Ranged -->
                                                     <xsd:enumeration value="Melee"/>
                                                     <xsd:enumeration value="Ranged"/>
