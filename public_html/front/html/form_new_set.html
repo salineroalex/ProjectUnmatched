@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>New Set Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="/"  target="_blank">
+            <h2>Set</h2>
+            <input type="text" name="name" placeholder="Name" required/>
+            <hr/>
+
+            <p>Number of Characters:</p>
+            <input type="radio" id="1" name="characters" value="1" required>
+            <label for="1">1</label><br>
+            <input type="radio" id="2" name="characters" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" id="4" name="characters" value="4">
+            <label for="4">4</label>
+            <hr/>
+
+            <p>Price:</p>
+            <label for="USD">USD</label><br>
+
+            <!-- Cambiar width en el CSS -->
+            <input type="number" id="USD" style="width: 60px" name="USD" min="0" value="0" required>$<br><br>
+            <label for="EUR">EUR</label><br>
+            <input type="number" id="EUR" style="width: 60px" name="EUR" min="0" value="0" required>€<br><br>
+            <label for="GBP">GBP</label><br>
+            <input type="number" id="GBP" style="width: 60px" name="GBP" min="0" value="0" required>£<br><br>
+            <label for="JPY">JPY</label><br>
+            <input type="number" id="JPY" style="width: 60px" name="JPY" min="0" value="0" required>¥
+            <hr/>
+            
+            
+
+            <label for="date">Release Date: </label>
+            <input type="text" id="date" pattern="[1-12]/[2023-2200]" placeholder="02/2023" size="3" maxlength="7" required><br>
+            <hr/>
+            
+            <input type="checkbox" id="language1" name="language1" value="English">
+            <label for="language1">English</label><br>
+            <input type="checkbox" id="language2" name="language2" value="Spanish">
+            <label for="language2">Spanish</label><br>
+            <input type="checkbox" id="language3" name="language3" value="German">
+            <label for="language3">German</label><br>
+            <input type="checkbox" id="language4" name="language4" value="French">
+            <label for="language4">French</label><br>
+            <input type="checkbox" id="language5" name="language5" value="Japanese">
+            <label for="language5">Japanese</label>
+            <hr/>
+            
+            <input type="text" name="artistName" placeholder="Artist Name" required/>
+            <hr/>
+
+            <input type="submit" value="Add Set">
+        </form>
+    </body>
+</html>
