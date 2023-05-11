@@ -6,10 +6,13 @@
         <title>Modify Set Form</title>
     </head>
     <body>
+        <!-- Title -->
         <h2>Modify Prices</h2>
 
         <p>Select the Set you want to modify</p>
 
+        <!-- This is a drop-down list to choose the set you want to change the price -->
+        
         <select name="selectSet">
             <option value="set1" selected>Battle of Legends: Volume One</option>
             <option value="set2">Robin Hood vs. Bigfoot</option>
@@ -29,8 +32,12 @@
         </select>
         <hr>
 
+        <!-- A number field to set the new price -->
+        
         <input type="number" style="width: 60px" name="price" min="0" required>
 
+        <!-- This is another drop-down list to select the coint type to change the price -->
+        
         <select name="selectCoin">
             <option>USD/$</option>
             <option>EUR/€</option>
