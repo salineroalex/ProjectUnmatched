@@ -1,215 +1,42 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Modify Set Form</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h2>Modify Prices</h2>
-            
-         <p>Select the Set you want to modify</p>
-        
-        <ul>
-            <li><a href="#set1">Battle of Legends: Volume One</a></li>
-            <li>Robin Hood vs. Bigfoot</li>
-            <li>Bruce Lee</li>
-            <li>Jurassic Park: InGen vs. Raptors</li>
-            <li>Cobble &#38; Fog</li>
-            <li>Buffy the Vampire Slayer</li>
-            <li>Little Red Riding hood vs. Beowulf</li>
-            <li>Deadpool</li>
-            <li>Battle of Legends: Volume Two</li>
-            <li>Marvel's Redemption Row</li>
-            <li>Marvel's Hell Kitchen</li>
-            <li>Jurassic Park: Dr. Ellie Sattler vs. T-Rex</li>
-            <li>Houdini vs. Genie</li>
-            <li>Marvel's Teen Spirit</li>
-            <li>Marvel's For King and Country</li>
-        </ul>
 
+        <p>Select the Set you want to modify</p>
+
+        <select name="selectSet">
+            <option value="set1" selected>Battle of Legends: Volume One</option>
+            <option value="set2">Robin Hood vs. Bigfoot</option>
+            <option value="set3">Bruce Lee</option>
+            <option value="set4">Jurassic Park: InGen vs. Raptors</option>
+            <option value="set5">Cobble &#38; Fog</option>
+            <option value="set6">Buffy the Vampire Slayer</option>
+            <option value="set7">Little Red Riding hood vs. Beowulf</option>
+            <option value="set8">Deadpool</option>
+            <option value="set9">Battle of Legends: Volume Two</option>
+            <option value="set10">Marvel's Redemption Row</option>
+            <option value="set11">Marvel's Hell Kitchen</option>
+            <option value="set12">Jurassic Park: Dr. Ellie Sattler vs. T-Rex</option>
+            <option value="set13">Houdini vs. Genie</option>
+            <option value="set14">Marvel's Teen Spirit</option>
+            <option value="set15">Marvel's For King and Country</option>
+        </select>
         <hr>
-        
-        <form action="/"  target="_blank">
-            
-            <p id="set1">Battle of Legends: Volume One</p>
-            <label for="USD1">USD</label><br>
-            <input type="number" id="USD1" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR1">EUR</label><br>
-            <input type="number" id="EUR1" style="width: 60px" name="EUR" min="0" value="39.99" required>€<br><br>
-            <label for="GBP1">GBP</label><br>
-            <input type="number" id="GBP1" style="width: 60px" name="GBP" min="0" value="35.99" required>£<br><br>
-            <label for="JPY1">JPY</label><br>
-            <input type="number" id="JPY1" style="width: 60px" name="JPY" min="0" value="5999.99" required>¥
-            
-            <hr>
-            
-            <p>Robin Hood vs. Bigfoot</p>
-            <label for="USD2">USD</label><br>
-            <input type="number" id="USD2" style="width: 60px" name="USD" min="0" value="32.99" required>$<br><br>
-            <label for="EUR2">EUR</label><br>
-            <input type="number" id="EUR2" style="width: 60px" name="EUR" min="0" value="29.99" required>€<br><br>
-            <label for="GBP2">GBP</label><br>
-            <input type="number" id="GBP2" style="width: 60px" name="GBP" min="0" value="26.99" required>£<br><br>
-            <label for="JPY2">JPY</label><br>
-            <input type="number" id="JPY2" style="width: 60px" name="JPY" min="0" value="4499.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Bruce Lee</p>
-            <label for="USD3">USD</label><br>
-            <input type="number" id="USD3" style="width: 60px" name="USD" min="0" value="18.99" required>$<br><br>
-            <label for="EUR3">EUR</label><br>
-            <input type="number" id="EUR3" style="width: 60px" name="EUR" min="0" value="16.99" required>€<br><br>
-            <label for="GBP3">GBP</label><br>
-            <input type="number" id="GBP3" style="width: 60px" name="GBP" min="0" value="14.99" required>£<br><br>
-            <label for="JPY3">JPY</label><br>
-            <input type="number" id="JPY3" style="width: 60px" name="JPY" min="0" value="2499.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Jurassic Park: InGen vs. Raptors</p>
-            <label for="USD4">USD</label><br>
-            <input type="number" id="USD4" style="width: 60px" name="USD" min="0" value="32.99" required>$<br><br>
-            <label for="EUR4">EUR</label><br>
-            <input type="number" id="EUR4" style="width: 60px" name="EUR" min="0" value="29.99" required>€<br><br>
-            <label for="GBP4">GBP</label><br>
-            <input type="number" id="GBP4" style="width: 60px" name="GBP" min="0" value="26.99" required>£<br><br>
-            <label for="JPY4">JPY</label><br>
-            <input type="number" id="JPY4" style="width: 60px" name="JPY" min="0" value="4499.99" required>¥
-            
-            <hr>
-            
-            <p>Cobble &#38; Fog</p>
-            <label for="USD5">USD</label><br>
-            <input type="number" id="USD5" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR5">EUR</label><br>
-            <input type="number" id="EUR5" style="width: 60px" name="EUR" min="0" value="39.99" required>€<br><br>
-            <label for="GBP5">GBP</label><br>
-            <input type="number" id="GBP5" style="width: 60px" name="GBP" min="0" value="35.99" required>£<br><br>
-            <label for="JPY5">JPY</label><br>
-            <input type="number" id="JPY5" style="width: 60px" name="JPY" min="0" value="5999.99" required>¥
-            
-            <hr>
-            
-            <p>Buffy the Vampire Slayer</p>
-            <label for="USD6">USD</label><br>
-            <input type="number" id="USD6" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR6">EUR</label><br>
-            <input type="number" id="EUR6" style="width: 60px" name="EUR" min="0" value="39.99" required>€<br><br>
-            <label for="GBP6">GBP</label><br>
-            <input type="number" id="GBP6" style="width: 60px" name="GBP" min="0" value="35.99" required>£<br><br>
-            <label for="JPY6">JPY</label><br>
-            <input type="number" id="JPY6" style="width: 60px" name="JPY" min="0" value="5999.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Little Red Riding hood vs. Beowulf</p>
-            <label for="USD7">USD</label><br>
-            <input type="number" id="USD7" style="width: 60px" name="USD" min="0" value="32.99" required>$<br><br>
-            <label for="EUR7">EUR</label><br>
-            <input type="number" id="EUR7" style="width: 60px" name="EUR" min="0" value="29.99" required>€<br><br>
-            <label for="GBP7">GBP</label><br>
-            <input type="number" id="GBP7" style="width: 60px" name="GBP" min="0" value="26.99" required>£<br><br>
-            <label for="JPY7">JPY</label><br>
-            <input type="number" id="JPY7" style="width: 60px" name="JPY" min="0" value="4499.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Deadpool</p>
-            <label for="USD8">USD</label><br>
-            <input type="number" id="USD8" style="width: 60px" name="USD" min="0" value="18.99" required>$<br><br>
-            <label for="EUR8">EUR</label><br>
-            <input type="number" id="EUR8" style="width: 60px" name="EUR" min="0" value="16.99" required>€<br><br>
-            <label for="GBP8">GBP</label><br>
-            <input type="number" id="GBP8" style="width: 60px" name="GBP" min="0" value="14.99" required>£<br><br>
-            <label for="JPY8">JPY</label><br>
-            <input type="number" id="JPY8" style="width: 60px" name="JPY" min="0" value="2499.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Battle of Legends: Volume Two</p>
-            <label for="USD9">USD</label><br>
-            <input type="number" id="USD9" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR9">EUR</label><br>
-            <input type="number" id="EUR9" style="width: 60px" name="EUR" min="0" value="39.99" required>€<br><br>
-            <label for="GBP9">GBP</label><br>
-            <input type="number" id="GBP9" style="width: 60px" name="GBP" min="0" value="35.99" required>£<br><br>
-            <label for="JPY9">JPY</label><br>
-            <input type="number" id="JPY9" style="width: 60px" name="JPY" min="0" value="5999.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Marvel's Redemption Row</p>
-            <label for="USD10">USD</label><br>
-            <input type="number" id="USD10" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR10">EUR</label><br>
-            <input type="number" id="EUR10" style="width: 60px" name="EUR" min="0" value="44.99" required>€<br><br>
-            <label for="GBP10">GBP</label><br>
-            <input type="number" id="GBP10" style="width: 60px" name="GBP" min="0" value="39.99" required>£<br><br>
-            <label for="JPY10">JPY</label><br>
-            <input type="number" id="JPY10" style="width: 60px" name="JPY" min="0" value="6699.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Marvel's Hell Kitchen</p>
-            <label for="USD11">USD</label><br>
-            <input type="number" id="USD11" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR11">EUR</label><br>
-            <input type="number" id="EUR11" style="width: 60px" name="EUR" min="0" value="44.99" required>€<br><br>
-            <label for="GBP11">GBP</label><br>
-            <input type="number" id="GBP11" style="width: 60px" name="GBP" min="0" value="39.99" required>£<br><br>
-            <label for="JPY11">JPY</label><br>
-            <input type="number" id="JPY11" style="width: 60px" name="JPY" min="0" value="6699.99" required>¥
-            <hr><!-- comment -->
-            
-            <p>Jurassic Park: Dr. Ellie Sattler vs. T-Rex</p>
-            <label for="USD12">USD</label><br>
-            <input type="number" id="USD12" style="width: 60px" name="USD" min="0" value="32.99" required>$<br><br>
-            <label for="EUR12">EUR</label><br>
-            <input type="number" id="EUR12" style="width: 60px" name="EUR" min="0" value="29.99" required>€<br><br>
-            <label for="GBP12">GBP</label><br>
-            <input type="number" id="GBP12" style="width: 60px" name="GBP" min="0" value="26.99" required>£<br><br>
-            <label for="JPY12">JPY</label><br>
-            <input type="number" id="JPY12" style="width: 60px" name="JPY" min="0" value="4499.99" required>¥
-            <hr><!-- comment -->
-            
-            <p>Houdini vd. Genie</p>
-            <label for="USD13">USD</label><br>
-            <input type="number" id="USD13" style="width: 60px" name="USD" min="0" value="32.99" required>$<br><br>
-            <label for="EUR13">EUR</label><br>
-            <input type="number" id="EUR13" style="width: 60px" name="EUR" min="0" value="29.99" required>€<br><br>
-            <label for="GBP13">GBP</label><br>
-            <input type="number" id="GBP13" style="width: 60px" name="GBP" min="0" value="26.99" required>£<br><br>
-            <label for="JPY13">JPY</label><br>
-            <input type="number" id="JPY13" style="width: 60px" name="JPY" min="0" value="4499.99" required>¥
-            
-            <hr><!-- comment -->
-            
-            <p>Marvel's Teen Spirit</p>
-            <label for="USD14">USD</label><br>
-            <input type="number" id="USD14" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR14">EUR</label><br>
-            <input type="number" id="EUR14" style="width: 60px" name="EUR" min="0" value="44.99" required>€<br><br>
-            <label for="GBP14">GBP</label><br>
-            <input type="number" id="GBP14" style="width: 60px" name="GBP" min="0" value="39.99" required>£<br><br>
-            <label for="JPY14">JPY</label><br>
-            <input type="number" id="JPY14" style="width: 60px" name="JPY" min="0" value="6699.99" required>¥
-            <hr><!-- comment -->
-            
-            <p>Marvel's For King and Country</p>
-            <label for="USD15">USD</label><br>
-            <input type="number" id="USD15" style="width: 60px" name="USD" min="0" value="49.99" required>$<br><br>
-            <label for="EUR15">EUR</label><br>
-            <input type="number" id="EUR15" style="width: 60px" name="EUR" min="0" value="44.99" required>€<br><br>
-            <label for="GBP15">GBP</label><br>
-            <input type="number" id="GBP15" style="width: 60px" name="GBP" min="0" value="39.99" required>£<br><br>
-            <label for="JPY15">JPY</label><br>
-            <input type="number" id="JPY15" style="width: 60px" name="JPY" min="0" value="6699.99" required>¥
-        </form>
+
+        <input type="number" style="width: 60px" name="price" min="0" required>
+
+        <select name="selectCoin">
+            <option>USD/$</option>
+            <option>EUR/€</option>
+            <option>GBP/£</option>
+            <option>JPY/¥</option>
+        </select>
+
     </body>
 </html>
