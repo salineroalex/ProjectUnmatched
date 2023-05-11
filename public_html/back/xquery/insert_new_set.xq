@@ -2,6 +2,8 @@ declare namespace xsi = "http://www.w3.org/2001/XMLSchema-instance";
 
 declare variable $sets := doc("database.xml")/unmatched/sets;
 
+
+
 let $new-set :=
   <set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NEW" released="true">
     <name>New Set Name</name>
