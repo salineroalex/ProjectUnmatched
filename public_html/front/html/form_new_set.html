@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
         <title>New Set Form</title>
@@ -10,10 +6,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form action="/"  target="_blank">
+        <form>
+            <!-- Title -->
             <h2>Set</h2>
             <input type="text" name="name" placeholder="Name" required/>
             <hr/>
+
+            <!-- 
+            Radio buttons to choose the only 3 possible amount  of characters of a set;
+            this field cannot be empty
+            -->
 
             <p>Number of Characters:</p>
             <input type="radio" id="1" name="characters" value="1" required>
@@ -24,10 +26,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <label for="4">4</label>
             <hr/>
 
-            <p>Price:</p>
-            <label for="USD">USD</label><br>
+            <!--
+            Number fields with a minimum and initial value of 0 to write the price of the set
+            for each coin; this field cannot be empty
+            -->
 
-            <!-- Cambiar width en el CSS -->
+            <p>Price:</p>
+
+            <!-- Change width with the CSS -->
+            <label for="USD">USD</label><br>
             <input type="number" id="USD" style="width: 60px" name="USD" min="0" value="0" required>$<br><br>
             <label for="EUR">EUR</label><br>
             <input type="number" id="EUR" style="width: 60px" name="EUR" min="0" value="0" required>€<br><br>
@@ -36,14 +43,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <label for="JPY">JPY</label><br>
             <input type="number" id="JPY" style="width: 60px" name="JPY" min="0" value="0" required>¥
             <hr/>
-            
-            
+
+            <!-- 
+            A text field to write the date, the pattern is 2 digits to set the month,
+            a "/" and 4 numbers to set the year, from 2023 to 2200 as a maximum year, there
+            is a placeholder for the user to know how to write the date; this field cannot
+            be empty. Could have made an input of "date" type but it would set the value
+            as day/month/year and we don't want the day 
+            -->
 
             <label for="date">Release Date: </label>
             <input type="text" id="date" pattern="[1-12]/[2023-2200]" placeholder="02/2023" size="3" maxlength="7" required><br>
             <hr/>
-            
-            <input type="checkbox" id="language1" name="language1" value="English">
+
+            <!-- 
+            5 checkboxes to choose the languages the sets will be made in; english is required
+            and checked by default
+            -->
+
+            <p>Language/s:</p>
+
+            <input type="checkbox" id="language1" name="language1" value="English" checked required>
             <label for="language1">English</label><br>
             <input type="checkbox" id="language2" name="language2" value="Spanish">
             <label for="language2">Spanish</label><br>
@@ -54,7 +74,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <input type="checkbox" id="language5" name="language5" value="Japanese">
             <label for="language5">Japanese</label>
             <hr/>
-            
+
+            <!-- 
+            Just a text field to write the artist name of the set; this field is required 
+            -->
+
             <input type="text" name="artistName" placeholder="Artist Name" required/>
             <hr/>
 
