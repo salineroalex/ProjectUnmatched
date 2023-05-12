@@ -26,16 +26,42 @@
             <label for="set">Select a set:</label>
             <select id="set" name="set">
 
-                <?php                
-                // Include the PHP file that retrieves the list of sets from the database
-                include('get_sets.php');
+                <script>
+                    //Load the XML data
+                    //Create a new XMLHttpRequest object, which is used to retrieve data from a server. The variable xhr is used to store this object.
+                    var xhr = new XMLHttpRequest();
 
-                // Loop through the sets and generate an option for each one
-                foreach ($sets as $set) {
-                echo "<option value=\"" . $set['id'] . "\">" . $set['name'] . "</option>";
-                }
-                ?>
+                    //Open a new request to retrieve the XML file called database.xml.
+                    xhr.open('GET', 'database.xml');
 
+                    //When the XML data is loaded, check if the response status is 200 (i.e., success) and if it is, store the XML response in the xml variable.
+                    xhr.onload = function () {
+                        if (xhr.status === 200) {
+                            var xml = xhr.responseXML;
+
+                            //Get all the elements in the XML with the tag name "set" and store them in the sets variable.
+                            var sets = xml.getElementsByTagName('set');
+
+                            //Get the select element with the ID "set" and store it in the select variable.
+                            var select = document.getElementById('set');
+
+                            xhr.onerror = function () {
+                                console.error('Error loading XML file.');
+                            };
+
+                            // Loop through each set in the sets variable, create a new option element for each set, and set its value and text content to the respective attribute values of the set element. Finally, append each option element to the select element.
+                            for (var i = 0; i < sets.length; i++) {
+                                var set = sets[i];
+                                var option = document.createElement('option');
+                                option.value = set.getAttribute('id');
+                                option.textContent = set.querySelector('name').textContent; // get the text content of the <name> element
+                                select.appendChild(option);
+                            }
+                        }
+                    };
+                    //Send the XMLHttpRequest to retrieve the XML data
+                    xhr.send();
+                </script>
             </select>
 
             <!-- Create a delete button that triggers the confirmation message -->
